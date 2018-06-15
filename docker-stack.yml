@@ -3,7 +3,7 @@ version: "3"
 
 services:
   webapp:
-    image: 172.17.8.101:5000/voting_img
+    image: fbm95/voting_img
     ports:
       - 1221:1221
     deploy:
