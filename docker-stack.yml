@@ -2,8 +2,8 @@
 version: "3"
 
 services:
-  voting_app:
-    image: voting_img
+  webapp:
+    image: 1172.17.8.101:5000/voting_img
     ports:
       - 1221:1221
     deploy:
