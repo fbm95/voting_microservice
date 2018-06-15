@@ -13,4 +13,4 @@ services:
       restart_policy:
         condition: on-failure
 
-# docker run -d --name results -p 1221:1221 voting_img
+# docker run -d --name voting -p 1221:1221 voting_img
