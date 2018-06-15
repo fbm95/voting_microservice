@@ -1,6 +1,6 @@
 FROM java:8
 VOLUME /tmp
-COPY app-voting.jar app.jar
+COPY target/app-voting.jar app.jar
 ENTRYPOINT ["java","-Dspring.data.mongodb.uri=mongodb://172.17.8.101:27017/votingapp","-jar","/app.jar"]
 EXPOSE 1221
 
