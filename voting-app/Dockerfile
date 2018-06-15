@@ -5,4 +5,4 @@ ENTRYPOINT ["java","-Dspring.data.mongodb.uri=mongodb://172.17.8.101:27017/votin
 EXPOSE 1221
 
 # docker build -f Dockerfile -t voting_img .
-# docker run -d --name results -p 1221:1221 voting_img
+# docker run -d --name voting -p 1221:1221 voting_img

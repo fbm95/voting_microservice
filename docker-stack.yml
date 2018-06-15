@@ -1,0 +1,16 @@
+---
+version: "3"
+
+services:
+  voting_app:
+    image: voting_img
+    ports:
+      - 1221:1221
+    deploy:
+      replicas: 2
+      update_config:
+        parallelism: 2
+      restart_policy:
+        condition: on-failure
+
+# docker run -d --name results -p 1221:1221 voting_img
