@@ -9,7 +9,7 @@ services:
     deploy:
       replicas: 5
       update_config:
-        parallelism: 2
+        parallelism: 5
       restart_policy:
         condition: on-failure
 
